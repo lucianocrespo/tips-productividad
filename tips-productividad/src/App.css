@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #3a4c9b 0%, #70627d 100%);
+  background: linear-gradient(135deg, #0d4c8f 0%, #377c7d 100%);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -30,7 +30,7 @@ h1 {
 
 h2 {
   font-size: 18px;
-  color: #555;
+  color: #343434;
   margin-top: 40px;
   margin-bottom: 15px;
   text-align: center;
@@ -61,6 +61,12 @@ p {
   flex-wrap: wrap;
 }
 
+/* --- Nuevo contenedor para el botón de reinicio --- */
+.reset-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
 button {
   padding: 14px 32px;
   font-size: 16px;
@@ -73,34 +79,52 @@ button {
   min-width: 160px;
 }
 
-button:first-child {
+/* Ajuste: Limitamos estos estilos solo a los botones dentro de .botones */
+.botones button:first-child {
   background-color: #4CAF50;
   color: white;
 }
 
-button:first-child:hover {
+.botones button:first-child:hover {
   background-color: #45a049;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }
 
-button:first-child:active {
+.botones button:first-child:active {
   transform: translateY(0);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-button:last-child {
+.botones button:last-child {
   background-color: #2196F3;
   color: white;
 }
 
-button:last-child:hover {
+.botones button:last-child:hover {
   background-color: #0b7dda;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
 }
 
-button:last-child:active {
+.botones button:last-child:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Nuevos estilos para el botón de reinicio --- */
+button.btn-reset {
+  background-color: #f44336;
+  color: white;
+}
+
+button.btn-reset:hover {
+  background-color: #d32f2f;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+button.btn-reset:active {
   transform: translateY(0);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
